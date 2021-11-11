@@ -604,7 +604,7 @@ If SORT is non-nil, sort records according to `bbdb-record-lessp'."
                              update-p sort))
        ;; mu4e
        ((eq mua 'mu4e)
-        (set-buffer mu4e~view-buffer-name)
+        (set-buffer gnus-article-buffer)
         (bbdb-update-records (bbdb-get-address-components header-class)
                              update-p sort))
        ;; Wanderlust
